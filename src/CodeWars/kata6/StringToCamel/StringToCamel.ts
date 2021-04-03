@@ -1,8 +1,8 @@
 function transform(str: string): any {
-    let regExp=/[-_]\w/ig;
-      return str.replace(regExp,function(match){
-            return match.charAt(1).toUpperCase();
-       });
+  let regExp = /[-_]\w/gi;
+  return str.replace(regExp, function (match) {
+    return match.charAt(1).toUpperCase();
+  });
 }
 
 console.log(transform("the_stealth_warrior"));
